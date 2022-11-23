@@ -1,0 +1,52 @@
+{
+	"title": "stickmy's karabiner rules",
+	"rules": [
+		{
+            "description": "单击 shift 切换输入法(ctrl + command + option + 0)",
+            "manipulators": [
+                {
+                    "from": {
+                        "key_code": "left_shift"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_shift"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "0",
+                            "modifiers": [
+                                "left_control",
+                                "left_option",
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "right_shift"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_shift"
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "0",
+                            "modifiers": [
+                                "left_control",
+                                "left_option",
+                                "left_command"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+	]
+}
